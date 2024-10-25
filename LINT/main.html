@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lint</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+   
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização Interna</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h2>Localização Interna</h2>
+    </header>
+
+    <section class="navigation-form">
+        <form id="routeForm">
+            <label for="currentLocation">Onde você está?</label>
+            <select id="currentLocation">
+                <option value="entrada">Entrada</option>
+                <option value="biblioteca">Biblioteca</option>
+                <option value="cantina">Cantina</option>
+                
+            </select>
+
+            <label for="destination">Onde deseja ir?</label>
+            <select id="destination">
+                <option value="cantina">Cantina</option>
+                <option value="biblioteca">Biblioteca</option>
+                <option value="secretaria">Secretaria</option>
+            </select>
+            <button type="button" onabort="findRoute()">Ver Rota</button>
+        </form>
+    </section>
+
+    <section class="map-container">
+        <div class="map">
+            <img src="images.jpeg" alt="Mapa Interno" class="map-image">
+            <!-- Marcadores de localização -->
+            <div class="location-marker" style="top: 20%; left: 30%;" id="entrada" title="Entrada"></div>
+            <div class="location-marker" style="top: 40%; left: 50%;" id="biblioteca" title="Biblioteca"></div>
+            <div class="location-marker" style="top: 60%; left: 30%;" id="cantina" title="Cantina"></div>
+            <div class="location-marker" style="top: 80%; left: 70%;" id="secretaria" title="Secretaria"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Localização Interna</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+    
+</body>
+</html>
+
+
+
+
